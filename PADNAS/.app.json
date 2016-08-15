@@ -4,8 +4,43 @@
     {
       "type": "kendo-ui-mobile:view",
       "name": "home",
-      "components": [],
-      "title": "Home View",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:form",
+          "components": [
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "login",
+              "title": "login",
+              "inputType": "image",
+              "titlePosition": "top",
+              "alignment": "center",
+              "imageUpload": "Wonman2.png"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "txtEmail",
+              "title": "txtEMail",
+              "inputType": "text",
+              "titlePosition": "left",
+              "inputTextType": "email",
+              "placeholder": "padnas@email.com"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "txtPassword",
+              "title": "txtPassword",
+              "inputType": "text",
+              "titlePosition": "left",
+              "inputTextType": "password",
+              "placeholder": "Password"
+            }
+          ],
+          "name": "homeModel",
+          "submitButton": "Login"
+        }
+      ],
+      "title": "Login to PADNAS",
       "addToNavigation": true,
       "icon": "home"
     }
